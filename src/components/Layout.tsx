@@ -2,8 +2,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React, { SVGProps } from "react";
-import { CreateBetPopup } from "../components/createBetPopup";
-import {Dropdown} from "react-day-picker";
+import { CreateBetPopup } from "./createBetPopup";
+import { Dropdown } from "react-day-picker";
 
 import {
   DropdownMenu,
@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 
-import { usePrivy } from '@privy-io/react-auth';
+import { usePrivy } from "@privy-io/react-auth";
 import { useWallets } from "@privy-io/react-auth";
 function LoginButton() {
   const { ready, authenticated, login, logout } = usePrivy();
@@ -28,13 +28,11 @@ function LoginButton() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm">
-                {address.slice(0, 6) + '...' + address.slice(-4)}
+                {address.slice(0, 6) + "..." + address.slice(-4)}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem onClick={logout}>
-                Disconnect
-              </DropdownMenuItem>
+              <DropdownMenuItem onClick={logout}>Disconnect</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </Link>
@@ -99,7 +97,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
             </Link>
           </CreateBetPopup>
 
-          <LoginButton/>
+          <LoginButton />
         </div>
       </header>
       <main>{children}</main>

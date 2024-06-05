@@ -15,7 +15,7 @@ function BarChartIcon(
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
+      fill="white"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
@@ -31,13 +31,21 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   return (
     <>
       <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
-        <Link className="flex items-center gap-2 font-bold text-xl" href="/">
-          <BarChartIcon className="h-6 w-6" />
+        <Link
+          style={{ color: "white" }}
+          className="flex items-center gap-2 font-bold text-xl"
+          href="/"
+        >
+          <BarChartIcon className="h-6 w-6" style={{ fill: "white" }} />
           UniMarket
         </Link>
         <div className="flex items-center gap-4">
           <CreateBetPopup>
-            <Link className="text-sm font-medium hover:underline" href="#">
+            <Link
+              style={{ color: "white" }}
+              className="text-sm font-medium hover:underline"
+              href="#"
+            >
               Create Market
             </Link>
           </CreateBetPopup>

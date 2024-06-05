@@ -29,7 +29,7 @@ import {JSX,SVGProps} from "react"
 
 export function CreateBetPopup({ children }: { children: React.ReactNode }) {
   return (
-    <Dialog defaultOpen>
+    <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[480px]">
         <DialogHeader>

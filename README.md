@@ -1,3 +1,6 @@
+## UniMarket
+This is the frontend of a prediction market built on top of uniswap hook v4.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
